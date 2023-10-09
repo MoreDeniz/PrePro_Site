@@ -1,0 +1,108 @@
+/* HEADER */
+.header {
+    background-color: #222;
+    box-sizing: border-box;
+    height: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    
+    &__content { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 39px;
+        z-index: 10;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+        }
+        
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        font-size: 26px;
+        color: $colorContent;
+        position: relative;
+    }
+
+    &__burger-input {
+        display: none;
+    }
+
+    &__item:hover {
+        cursor: pointer;
+        }
+        
+    &__link:hover {
+        cursor: pointer;
+    }
+
+    &__item:hover .header__icon path {
+        fill: $colorSelectSite;
+        }
+        
+    &__link:hover .header__icon path {
+        fill: $colorSelectSite;
+    }
+}
+
+#headerBurger:checked ~ .nav {
+    top: 54px;
+    right: -300px;
+}
+
+.nav {
+    position: absolute;
+    top: -700px;
+    right: -300px;
+    padding: 32px;
+    min-width: 232px;
+    background-color: $colorWhite;
+    box-shadow: $boxShadow;
+    transition: top 0.7s ease-in-out;
+    z-index: -1; 
+
+    &__title {
+        margin-bottom: 24px;
+        color: #000;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__item__link {
+        color: $colorSelectSite;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    &__sublist__link {
+        padding: 1em;
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+        display: block;
+        padding: 5px 0 6px 0;
+        width: 150px;
+        margin-left: 21px;    
+    }
+
+    &__sublist__item:hover {
+        background-color: $colorSite;
+    }
+}
