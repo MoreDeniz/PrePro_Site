@@ -1,0 +1,227 @@
+.filter-sort {
+    padding-top: 39px;
+    box-sizing: border-box;
+    height: 132px;
+    position: relative;
+    display: flex;
+    gap: $gapGrid;
+}
+    
+.filter {
+    padding-top: 13px;
+    width: 360px;
+    box-sizing: border-box;
+    // position: absolute;
+    position: relative;
+    z-index: 10;
+
+    &[open] {
+        background: $colorWhite;
+        box-shadow: $boxShadow;
+    }
+
+    &[open] .filter__head {
+        color: $colorSelectSite;
+    }
+
+    &[open] .filter__heading {
+        color: $colorTextLight;
+    }
+
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+    
+    &__content {
+        background-color: $colorWhite;
+        padding: 0 16px 16px 16px;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-left: 16px;
+    } 
+        
+    &__head {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorText;
+    }
+        
+    &__item[open] .filter__heading {
+        color: $colorSelectSite;
+    }
+
+    &__item {
+        margin-top: 16px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorText;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid $colorBorder;
+        border-left: 5px solid $colorSelectSite;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+            
+    &__link {
+        color: $colorTextLight;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px; 
+        &:hover {
+            color: $colorSelectSite;
+        }
+    } 
+}
+
+.sort {
+    padding-top: 12px;
+    display: flex;
+    gap: 18px;
+    
+    &__details {
+        position: relative;
+    }
+    
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        color: $colorTextLight;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; 
+    }
+    
+    &__heading {
+        color: $colorTextLight;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px; 
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: $colorWhite;
+        box-shadow: $boxShadow;
+        padding: 7px 30px 11px 9px; 
+        position: absolute; 
+        left: -9px;
+        top: 22px;
+    }
+}
+
+
+.product-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    // @include centerflex;
+    gap: $gapGrid;
+}
+    
+.product {
+    width: $thirdSite;
+    display: flex;
+    flex-direction: column;
+    
+    &__img {
+        width: 100%;
+    }
+    
+    &__content {
+        background-color: $colorContent;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    &__name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: $colorText;
+    }
+    
+    &__text {
+        color: $colorTextLight;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+    }
+    
+    &__price {
+        color: $colorSelectSite;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.pagination {
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 96px;
+
+    &__content {
+        height: 43px;
+        width: 283px;
+        padding: 12px 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__numbers {
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        color: $colorTextLight;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__numbers-active {
+        color: $colorSelectSite;
+    }
+
+    &__row path {
+        fill: $colorTextLight;
+    }
+}
