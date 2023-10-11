@@ -1204,4 +1204,203 @@ h4 > a::before {
 .footer__soc__logo:hover path {
   background-color: #F16D7F;
   fill: #fff;
+}
+
+.cart-goods {
+  padding-top: 96px;
+  padding-bottom: 128px;
+  height: 998px;
+}
+
+.goods-content {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  height: 774px;
+  justify-content: space-between;
+}
+.goods-content__left {
+  width: 57%;
+  height: 774px;
+}
+.goods-content__left__item {
+  height: 306px;
+  justify-content: space-between;
+  box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.35);
+}
+.goods-content__left__item1 {
+  margin-bottom: 40px;
+}
+.goods-content__img {
+  width: 262px;
+  height: 306px;
+}
+.goods-content__left__info {
+  height: 306px;
+  width: 390px;
+  padding: 22px 22px 62px 32px;
+}
+.goods-content__heading {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.goods-content__x:hover path {
+  fill: #F16D7F;
+}
+.goods-content__info-title {
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+.goods-content__heading {
+  width: 240px;
+}
+.goods-content__info {
+  color: #575757;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.goods-content__price {
+  color: #F16D7F;
+}
+.goods-content__info-digital {
+  border: #E1E1E1 1px solid;
+  padding: 0 16px;
+  color: #636363;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.goods-content__info-quantity {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.goods-content__left__buttons {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 72px;
+}
+.goods-content__left__buttons__button {
+  width: 238px;
+  height: 50px;
+  padding: 16px 36px;
+  border: 1px solid #636363;
+  transition: 1s;
+}
+.goods-content__left__buttons__button:hover a {
+  color: #fff;
+}
+.goods-content__left__buttons__button:hover {
+  background-color: #F16D7F;
+}
+.goods-content__left__buttons__text {
+  color: #000;
+}
+.goods-content__right {
+  width: 32%;
+  height: 774px;
+}
+.goods-content__data-title {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.goods-content__data-registrate {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.goods-content__data {
+  height: 306px;
+  padding-top: 16px;
+}
+.goods-content__data-box {
+  width: 360px;
+  height: 45px;
+  color: #A4A4A4;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 17px;
+}
+.goods-content__data-box:focus {
+  color: #636363;
+  outline-color: #A4A4A4;
+}
+.goods-content__data-box-price {
+  width: 102px;
+  padding: 11px 15px;
+  font-size: 11px;
+}
+.goods-content__data-price {
+  width: 360px;
+  height: 214px;
+  background-color: #F1E4E6;
+  margin-top: 40px;
+  padding: 40px;
+}
+.goods-content__data-price__sub-total {
+  justify-content: flex-end;
+  gap: 32px;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.goods-content__data-price__grand-total {
+  justify-content: flex-end;
+  gap: 32px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 21px;
+}
+.goods-content__data-price__price-grand {
+  color: #F16D7F;
+  font-weight: 700;
+}
+.goods-content__data-price__line {
+  width: 275px;
+  color: #E1E1E1;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.goods-content__data-price__checkout {
+  width: 275;
+  height: 50px;
+  padding: 16px 42px;
+  background-color: #F16D7F;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.goods-content__data-price__checkout:hover {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
