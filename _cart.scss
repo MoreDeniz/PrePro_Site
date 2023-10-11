@@ -1,0 +1,231 @@
+.cart-goods {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    height: 998px;
+}
+
+.goods-content {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 774px;
+    justify-content: space-between;
+
+    &__left {
+        width: 57%;
+        height: 774px;
+    }
+
+    &__left__item {
+        height: 306px;
+        justify-content: space-between;
+        box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.35);
+    }
+
+    &__left__item1 {
+        margin-bottom: 40px;
+    }
+
+    &__img {
+        width: 262px;
+        height: 306px;
+    }
+
+    &__left__info {
+        height: 306px;
+        width: 390px;
+        padding: 22px 22px 62px 32px;
+    }
+
+    &__heading {
+        color: $colorText;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__x:hover path {
+        fill: $colorSelectSite;
+    }
+
+    &__info-title {
+        justify-content: space-between;
+        margin-bottom: 42px;
+    }
+
+    &__heading {
+        width: 240px;
+    }
+
+    &__info {
+        color: #575757;
+        font-family: Lato;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    &__price {
+        color: $colorSelectSite;
+    }
+
+    &__info-digital {
+        border: $colorBorder 1px solid;
+        padding: 0 16px;
+        color: $colorTextLight;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__info-quantity {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+    }
+
+    &__left__buttons {
+        display: flex;
+        justify-content: space-between;
+        color: $colorText;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-top: 72px;
+    }
+
+    &__left__buttons__button {
+        width: 238px;
+        height: 50px;
+        padding: 16px 36px;
+        border: 1px solid $colorTextLight;
+        transition: 1s;
+
+        &:hover a{
+            color: #fff;
+        }
+
+        &:hover{
+            background-color: $colorSelectSite;
+        }
+    }
+
+    &__left__buttons__text {
+        color: $colorText;
+    }
+
+    // right
+    &__right {
+        width: 32%;
+        height: 774px;
+    }
+
+    &__data-title {
+        color: $colorText;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__data-registrate {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__data {
+        height: 306px;
+        padding-top: 16px;
+    }
+
+
+    &__data-box {
+        width: 360px;
+        height: 45px;
+        color: #A4A4A4;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 17px;
+        &:focus {
+            color: $colorTextLight;
+            outline-color: #A4A4A4;
+        }
+    }
+
+    &__data-box-price {
+        width: 102px;
+        padding: 11px 15px;
+        font-size: 11px;
+    }
+
+    &__data-price {
+        width: 360px;
+        height: 214px;
+        background-color: $colorSite;
+        margin-top: 40px;
+        padding: 40px;
+    }
+
+    &__data-price__sub-total {
+        justify-content: flex-end;
+        gap: 32px;
+        color: #4A4A4A;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+
+    &__data-price__grand-total {
+        justify-content: flex-end;
+        gap: 32px;
+        color: $colorText;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 21px;
+    }
+
+    &__data-price__price-grand {
+        color: $colorSelectSite;
+        font-weight: 700;
+    }
+
+    &__data-price__line {
+        width: 275px;
+        color: $colorBorder;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__data-price__checkout {
+        width: 275;
+        height: 50px;
+        padding: 16px 42px;
+        background-color: $colorSelectSite;
+        color: $colorWhite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+        
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
