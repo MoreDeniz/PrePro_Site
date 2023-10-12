@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;700;800&display=swap"
+    rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
 </head>
 <body>
     <div class="box__content">
@@ -134,7 +139,7 @@
                         <div class="goods-content__left__img">
                             <img src="img/catalog_3.png" alt="goods" class="goods-content__img">
                         </div>
-                        <div class="goods-content__left__info">
+                        <div class="goods-content__left__info flex">
                             <div class="goods-content__info-title flex">
                                 <h4 class="goods-content__heading">MANGO  PEOPLE <br> T-SHIRT</h4>
                                 <svg class="goods-content__x" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +152,7 @@
                             <p class="goods-content__info">Size: Xl</p>
                             <div class="goods-content__info-quantity flex">
                                 <p class="goods-content__info">Quantity:</p>
-                                <p class="goods-content__info-digital">2</p>
+                                <input type="number" min="1" class="goods-content__info-digital">
                             </div> 
                         </div>
                     </div>
@@ -169,7 +174,7 @@
                             Size: Xl <br>
                             <div class="goods-content__info-quantity flex">
                                 <p class="goods-content__info">Quantity:</p>
-                                <p class="goods-content__info-digital">2</p>
+                                <input type="number" min="1" class="goods-content__info-digital">
                             </div>
                         </div>
                     </div>
@@ -184,10 +189,12 @@
                     <div class="goods-content__data">
                         <div class="goods-content__data-registrate">
                             <h3 class="goods-content__data-title">SHIPPING ADRESS</h3>
-                            <input class="goods-content__data-box" type="email" placeholder="Bangladesh"></input>
-                            <input class="goods-content__data-box" type="email" placeholder="State"></input>
-                            <input class="goods-content__data-box" type="email" placeholder="Postcode / Zip"></input>
-                            <input class="goods-content__data-box goods-content__data-box-price" type="text" placeholder="GET A QUOTE">
+                            <form action="#" class="goods-content__form">
+                                <input class="goods-content__data-box" type="text" placeholder="Country"></input>
+                                <input class="goods-content__data-box" type="text" placeholder="State"></input>
+                                <input class="goods-content__data-box" type="number" placeholder="Postcode / Zip"></input>
+                                <input class="goods-content__data-box goods-content__data-box-price" type="submit" placeholder="GET A QUOTE">
+                            </form>
                         </div>
 
                         <div class="goods-content__data-price">
@@ -205,12 +212,9 @@
 
                             <div class="goods-content__data-price__checkout">PROCEED TO CHECKOUT</div>
                         </div>
-                    </div>
-
+                    </div>  
                 </div>
-        
             </div>
-        
         </section>
     </div>
 
