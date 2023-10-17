@@ -431,4 +431,44 @@
     }
 }
 
+// ----------------------------------------
+// TABLET
+// ----------------------------------------
+@media (max-width: 1024px) {
 
+    .mc__content {
+        // display: grid;
+        gap: $gapGridTablet;
+        // grid-template-columns: repeat(2, 48%);
+        display: flex;
+    }
+
+    article~.mc__item-6 {
+        display: none;
+
+    }
+
+    .describe-block {
+        &__content {
+            height: 601px;
+            width: 100%;
+        }
+
+        &__sort {
+            margin-bottom: 48px;
+        }
+
+        &__long-line {
+            margin: 0;
+        }
+    }
+}
+
+
+// ----------------------------------------
+// iPhone 
+// ----------------------------------------
+@media (max-width: 768px) {
+
+
+}

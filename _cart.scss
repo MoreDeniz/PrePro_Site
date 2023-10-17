@@ -12,10 +12,13 @@
     box-sizing: border-box;
     height: 774px;
     justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
 
     &__left {
         width: 57%;
         height: 774px;
+        padding-left: 1px;
     }
 
     &__left__item {
@@ -134,6 +137,7 @@
     &__right {
         width: 32%;
         height: 774px;
+        padding-right: 1%;
     }
 
     &__data-title {
@@ -252,4 +256,66 @@
             font-weight: 700;
         }
     }
+}
+
+// ----------------------------------------
+// TABLET
+// ----------------------------------------
+@media (max-width: 1024px) {
+
+    .cart-goods {
+        padding-top: 59px;
+        padding-bottom: 128px;
+        height: 1287px;
+        width: 100%;
+    }
+
+    .goods-content {
+        flex-direction: column;
+        gap: 48px;
+
+        &__data-box {
+            box-sizing: border-box;
+        }
+
+        &__data {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__left {
+            width: 94%;
+        }
+
+        &__right {
+            width: 94%;
+        }
+
+        &__data-registrate {
+            width: 49%;
+        }
+
+        &__data-price {
+            width: 49%;
+            height: 214px;
+        }
+
+        &__left__buttons {
+            justify-content: center;
+            gap: 48px;
+        }
+
+        &__data-price__checkout {
+            padding: 16px 24px;
+            text-align: center;
+        }
+    }
+}
+
+
+// ----------------------------------------
+// iPhone 
+// ----------------------------------------
+@media (max-width: 768px) {
 }

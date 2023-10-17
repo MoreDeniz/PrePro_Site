@@ -1,6 +1,6 @@
 /* HEADER */
 .header {
-    background-color: #222;
+    background-color: $backBlock;
     box-sizing: border-box;
     height: 75px;
     padding-top: 20px;
@@ -52,13 +52,14 @@
 
 #headerBurger:checked ~ .nav {
     top: 54px;
-    right: -300px;
+    right: -200px;
+    z-index: 10;
 }
 
 .nav {
     position: absolute;
     top: -700px;
-    right: -300px;
+    right: -200px;
     padding: 32px;
     min-width: 232px;
     background-color: $colorWhite;
@@ -69,7 +70,6 @@
     &__title {
         margin-bottom: 24px;
         color: #000;
-        font-family: Lato;
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
@@ -78,7 +78,6 @@
 
     &__item__link {
         color: $colorSelectSite;
-        font-family: Lato;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -106,3 +105,56 @@
         background-color: $colorSite;
     }
 }
+
+
+// ----------------------------------------
+// TABLET
+// ----------------------------------------
+
+@media screen {
+    .header {
+        &__left {
+            margin-left: 3%;
+        }
+
+        &__right {
+            margin-right: 3%;
+        }
+    }
+
+    #headerBurger:checked ~ .nav {
+        top: 54px;
+        right: 0px;
+    }
+
+    #headerBurger:checked .main {
+        position: absolute;
+        // z-index: -1;
+    }
+
+    .nav {
+        position: absolute;
+        top: -700px;
+        right: 0px;
+    }
+}
+
+
+// ----------------------------------------
+// iPhone 
+// ----------------------------------------
+
+@media (max-width: 768px) {
+
+    .header__right .header__link {
+    display: none;
+}
+
+
+
+
+
+
+
+}
+

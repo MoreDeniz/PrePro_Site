@@ -2,6 +2,7 @@
 
 .footer {
     /* footer__top */
+    flex-direction: column;
     
     &__top {
         flex-direction: row;
@@ -47,16 +48,15 @@
     /* footer__middle */
     
     &__middle {
-        justify-content: space-between;
         padding-top: 97px;
         padding-bottom: 126px;
         background-image: url(img/foot-bg.jpg);
         background-size: cover;
-        background-position: center center;
+        // background-position: center center;
     }
 
     &__middle__content {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         height: 448px;
@@ -208,3 +208,113 @@
         fill: $colorWhite; 
     }
 }
+
+
+// ----------------------------------------
+// TABLET
+// ----------------------------------------
+@media (max-width: 1024px) {
+
+    .footer__top {
+        flex-direction: column;
+        height: 610px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        align-items: center;
+        justify-content: center;
+
+        &__block {
+            width: 360px;
+        }
+
+        &__text {
+            width: 360px; 
+        }
+    }
+
+    .footer__middle {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 614px;
+        box-sizing: border-box;
+        gap: 48px;
+        // background-position: top;
+
+        &__middle {
+            justify-content: space-between;
+            padding-top: 64px;
+            padding-bottom: 140px;
+        }
+
+        &_text {
+            width: 360px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    } 
+    
+     /* footer__bottom */
+    
+     .footer__bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 144px;
+        
+
+    }
+
+    .footer {
+
+        &__soc__lincs{
+            padding-top: 42px;
+            padding-bottom: 42px;
+            order: 1;
+        }
+
+        &__soc__logo1, &__soc__logo2 {
+            display: none;
+        }
+
+        &__brand {
+            order: 2;
+            text-align: center;
+            padding-left: 0;
+            padding-bottom: 9px;
+        }
+
+    }
+
+
+}
+
+
+// ----------------------------------------
+// iPhone
+// ----------------------------------------
+
+@media (max-width: 768px) {
+
+    .footer__middle {
+        height: 550px;
+
+        &_text {
+            font-size: 18px; 
+        }
+    }
+
+    .footer__right {
+
+        &__bottom {
+            font-size: 14px; 
+            text-align: center;
+        }
+    }
+
+
+
+
+
+    }

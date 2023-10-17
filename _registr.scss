@@ -2,7 +2,7 @@
     min-height: 675px;
     padding-top: 64px;
     padding-bottom: 96px;
-    border: $colorText 1px solid;
+    // border: $colorText 1px solid;
     box-sizing: border-box;
 
     &__box {
@@ -145,3 +145,32 @@
         font-weight: 300;
     }
 }
+
+// ----------------------------------------
+// TABLET
+// ----------------------------------------
+@media (max-width: 1024px) {
+
+    .register-content {
+        padding-left: 2%;
+        padding-right: 2%; 
+    
+        &__left {
+            width: 48%;
+        }
+
+        &__right {
+            width: 48%;
+        }
+    }
+
+    // .footer__top {
+    //     display: none;
+    // }
+
+}
+
+
+// ----------------------------------------
+// iPhone 
+// ----------------------------------------
