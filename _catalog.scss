@@ -3,7 +3,6 @@
     padding-bottom: 65px;
     box-sizing: border-box;
     height: 132px;
-    // position: relative;
     display: flex;
     justify-content: space-between;
     gap: $gapGrid;
@@ -12,7 +11,6 @@
 .filter {
     max-width: 360px;
     box-sizing: border-box;
-    // position: relative;
     z-index: 10;
 
     &[open] {
@@ -150,7 +148,7 @@
 }
     
 .product {
-    width: $thirdSiteTablet;
+    max-width: $thirdSite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,26 +258,25 @@
     }
 
     .product {
-        // width: $halfSiteTablet;
+        // max-width: $halfSiteTablet;
+        max-width: 500px;
         display: flex;
         flex-direction: column;
-    }    
 
-    .product-box {
-        justify-content: center;
-        gap: $gapGridTablet;
-    }
+        &-box {
+            justify-content: center;
+            gap: $gapGridTablet;
+        }
 
-    .product_off {
-        display: none;
-    }
-
+        &_off {
+            display: none;
+        }
+    }  
 
     .pagination {
         padding-top: 40px;
         padding-bottom: 64px;
     }
-
 }
 
 
@@ -289,56 +286,45 @@
 
 @media (max-width: 768px) {
 
-    @media (max-width: 768px) {
+    .top-head {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 46px;
 
-        .top-head {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 24px;
-            padding-bottom: 46px;
-    
-            &__heading {
-                margin-left: 0;
-            }
+        &__heading {
+            margin-left: 0;
         }
-    
-        .breadcrumbs {
+    }
+
+    .breadcrumbs {
+        margin-right: 0;
+    }
+
+    .filter {
+        &__head {
+            display: none;
+        }
+    }
+
+    .filter-sort {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 40px;
+
+        &__heading {
+            margin-left: 16px;
             margin-right: 0;
         }
-    
-        .filter {
-            &__head {
-                display: none;
-            }
-        }
-    
-        .filter-sort {
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 24px;
-            padding-bottom: 40px;
-    
-            &__heading {
-                margin-left: 16px;
-                margin-right: 0;
-            }
-        }
-    
-        .sort__heading {
-            font-size: 12px;
-        }
-    
-        .product {
-            width: $widthSiteIphone;
-        }
     }
 
-    .footer__middle {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 693px;
+    .sort__heading {
+        font-size: 12px;
     }
 
+    .product {
+        max-width: $widthSiteIphone;
+    }
 }

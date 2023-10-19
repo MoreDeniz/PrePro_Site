@@ -52,6 +52,7 @@
         padding-bottom: 126px;
         background-image: url(img/foot-bg.jpg);
         background-size: cover;
+        justify-content: space-between;
         // background-position: center center;
     }
 
@@ -65,8 +66,8 @@
     
     &__middle__left {
         position: relative;
-        width: 32%;
-        // width: 47%;
+        text-align: center;
+        width: 47%;
         flex-direction: column;
         align-items: center;
         font-weight: 400;
@@ -297,24 +298,42 @@
 
 @media (max-width: 768px) {
 
-    .footer__middle {
-        height: 550px;
-
-        &_text {
-            font-size: 18px; 
-        }
-    }
-
     .footer__right {
 
         &__bottom {
             font-size: 14px; 
             text-align: center;
         }
+
+        &__botom {
+            margin-bottom: 22px;
+        }
+    
     }
 
+    .footer__middle {
 
+        &__content {
+            height: 376px;
+            padding-bottom: 0;
+        }
 
+        &_text {
+            font-size: 18px; 
+        }
 
+        &__left {
+            // width: 98%;
+            width: 48%;
+        }
 
+        &__right {
+            width: 98%;
+        }
+
+        &_text {
+            margin-bottom: 0;
+        }
     }
+
+}

@@ -1,7 +1,7 @@
 .cart-goods {
     padding-top: 96px;
     padding-bottom: 128px;
-    height: 998px;
+    min-height: 998px;
 }
 
 .goods-content {
@@ -10,14 +10,14 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    height: 774px;
+    // min-height: 774px;
     justify-content: space-between;
     padding-left: 1%;
     padding-right: 1%;
 
     &__left {
         width: 57%;
-        height: 774px;
+        // height: 774px;
         padding-left: 1px;
     }
 
@@ -135,8 +135,11 @@
 
     // right
     &__right {
-        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         height: 774px;
+        width: 38%;
         padding-right: 1%;
     }
 
@@ -266,7 +269,7 @@
     .cart-goods {
         padding-top: 59px;
         padding-bottom: 128px;
-        height: 1287px;
+        // height: 1287px;
         width: 100%;
     }
 
@@ -289,7 +292,11 @@
         }
 
         &__right {
+            flex-direction: row;
+            justify-content: space-between;
             width: 94%;
+            padding-right: 0;
+            height: 300px;
         }
 
         &__data-registrate {
@@ -318,4 +325,35 @@
 // iPhone 
 // ----------------------------------------
 @media (max-width: 768px) {
+
+    .goods-content {
+        flex-direction: column;
+        gap: 48px;
+
+        &__right {
+            flex-direction: column;
+            justify-content: start;
+            height: 530px;
+            align-items: center;
+        }
+
+        &__data-box {
+            box-sizing: border-box;
+        }
+
+        &__data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__data-registrate {
+            width: 98%;
+        }
+
+        &__data-price {
+            width: 360px;
+        }
+    }    
 }

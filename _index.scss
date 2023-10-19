@@ -245,7 +245,6 @@ a {
 
     &__title {
         color: #222;
-        font-family: Lato;
         font-size: 30px;
         font-style: normal;
         font-weight: 400;
@@ -256,7 +255,6 @@ a {
     
     &__subtitle {
         color: #9F9F9F;
-        font-family: Lato;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -294,7 +292,6 @@ a {
 }
 
 .mc__item {
-    height: 581px; 
     flex-direction: column; 
     position: relative;
     z-index: 0;
@@ -438,11 +435,7 @@ h4 > a::before {
         padding-left: calc(50% - $widthSiteTablet / 2);
         padding-right: calc(50% - $widthSiteTablet / 2);
     }  
-    
-    body {
-         padding-left: 2%;
-         padding-right: 2%;
-     }  
+  
 
     /* TOP */
     .top {
@@ -510,7 +503,6 @@ h4 > a::before {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            // grid-template-columns: repeat(2, $halfSiteTablet);
             margin-bottom: 32px;
         }
 
@@ -585,16 +577,10 @@ h4 > a::before {
         margin-bottom: 96px;
 
         &__content {
-            // grid-template-columns: repeat(1, 98%);
             margin-bottom: 40px;
             display: flex;
             flex-direction: column;
         }
-    }
-
-    
-
-   
-    
+    }  
 }
    

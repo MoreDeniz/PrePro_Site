@@ -164,9 +164,29 @@
         }
     }
 
-    // .footer__top {
-    //     display: none;
-    // }
+    .footer__middle {
+
+        &__content {
+            height: 376px;
+            padding-bottom: 0;
+        }
+
+        &__img {
+            width: 144px;
+        }
+
+        &__left {
+            // width: 48%;
+        }
+
+        &__right {
+            width: 98%;
+        }
+
+        &_text {
+            margin-bottom: 0;
+        }
+    }
 
 }
 
@@ -174,3 +194,24 @@
 // ----------------------------------------
 // iPhone 
 // ----------------------------------------
+
+@media (max-width: 768px) {
+    .register-content{
+        padding-top: 40px;
+
+        &__box {
+        display: flex;
+        flex-direction: column;
+        } 
+    
+        &__left {
+            width: 98%;
+        }
+
+        &__right {
+            width: 98%;
+            margin-top: 40px;
+            height: 400px;
+        }
+    }
+}
